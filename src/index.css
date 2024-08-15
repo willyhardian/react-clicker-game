@@ -1,0 +1,95 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    text-align: center;
+    background: #3a3f47;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.score h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.clicker {
+    margin-top: 20px;
+}
+
+.click-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #282c34;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.click-button:hover {
+    background-color: #21a1f1;
+}
+
+.score-medium {
+    background-color: #f39c12;
+    transition: background-color 0.5s ease;
+}
+
+.score-high {
+    background-color: #e74c3c;
+    color: #fff;
+    transition: background-color 0.5s ease;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
